@@ -1,0 +1,9 @@
+mutation (
+    $id: Int!
+    $order: db_StringFieldUpdateOperationsInput
+){
+    db_updateOneOrder(where: {id: $id}, data: {order: $order}){
+        id
+        order
+    }
+}

@@ -1,0 +1,10 @@
+query($status: db_IntFilter!) {
+    db_findManyTask(where: { status: $status }) {
+      id,
+      title,
+      content,
+      status,
+      createdAt,
+      updatedAt
+    }
+}

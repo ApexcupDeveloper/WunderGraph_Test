@@ -1,0 +1,8 @@
+query {
+    db_findManyOrder {
+      id,
+      order,
+      createdAt,
+      updatedAt
+    }
+}

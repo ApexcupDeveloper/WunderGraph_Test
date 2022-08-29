@@ -1,0 +1,9 @@
+mutation (
+    $id: Int!
+    $title: db_StringFieldUpdateOperationsInput
+){
+    db_updateOneSection(where: {id: $id}, data: {title: $title}){
+        id
+        title
+    }
+}

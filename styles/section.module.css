@@ -1,0 +1,186 @@
+
+.section {
+  margin: 5px;
+	border: 1px solid #2d2b2b;
+	border-radius: 6px;
+	padding: 10px;
+	padding-top: 0px;
+	min-width: 280px;
+	max-width: 280px;
+	/* border: 1px solid #373535; */
+  position: relative;
+}
+
+.sectionHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+}
+
+.sectoinBody {
+	/* overflow-x: hidden;
+    overflow-y: auto; */
+	height: 80%;
+}
+
+.sectionTitle {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.sectionMore {
+	color: #9d9b9b;
+	cursor: pointer;
+}
+
+.sectionMore:hover {
+	color: #098b8f;
+}
+
+.addTaskBtn {
+	display: flex;
+	align-items: center;
+	color: #9d9b9b;
+	cursor: pointer;
+	font-size: 14px;
+  margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.addTaskBtn:hover {
+	color: #098b8f;
+}
+
+.addTaskTool {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.addBtn {
+  width: 80px;
+  height: 34px;
+  background: #098b8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cancelBtn {
+  width: 80px;
+  height: 34px;
+  background: #333535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #bebbbb;
+  cursor: pointer;
+}
+
+.addTask {
+  width: 100%;
+}
+
+.addTaskWrapper {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.addTaskWrapper * {
+  width: 100%;
+  height: 40px;
+  background: #2d2b2b;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  resize: none;
+}
+
+.addTaskDescription {
+  height: 80px !important;
+  font-size: 12px !important;
+}
+
+.moreModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  background: #2d2b2b;
+  right: 0px;
+  -webkit-box-shadow: 0px 6px 26px -10px rgba(0,0,0,0.52);
+  -moz-box-shadow: 0px 6px 26px -10px rgba(0,0,0,0.52);
+  box-shadow: 0px 6px 26px -10px rgba(0,0,0,0.52);
+  padding: 5px 0px;
+}
+
+.moreModalBtn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.moreModalBtn:hover {
+  background: #433f3f;
+}
+
+.editInput {
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  background: #2d2b2b;
+  border: 1px solid gray;
+  color: white;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.editTool {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.editTool div:first-child {
+  cursor: pointer;
+  background: #098b8f;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.editTool div:last-child {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.editTool div:last-child:hover {
+  text-decoration: underline;
+}

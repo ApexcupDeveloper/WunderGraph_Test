@@ -1,0 +1,7 @@
+mutation (
+    $id: Int!
+){
+    db_deleteOneTask(where: {id: $id}) {
+        id
+    }
+}

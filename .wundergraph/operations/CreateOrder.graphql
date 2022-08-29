@@ -1,0 +1,16 @@
+mutation (
+	$id: Int!
+	$order: String!
+  $updatedAt: DateTime! @injectCurrentDateTime
+) {
+	db_createOneOrder(
+		data: {
+			id: $id
+			order: $order
+			updatedAt: $updatedAt
+		}
+	) {
+		id,
+		order
+	}
+}

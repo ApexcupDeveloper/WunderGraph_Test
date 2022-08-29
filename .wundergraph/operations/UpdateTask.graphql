@@ -1,0 +1,13 @@
+mutation (
+    $id: Int!
+    $title: db_StringFieldUpdateOperationsInput
+    $content: db_StringFieldUpdateOperationsInput
+    $status: db_IntFieldUpdateOperationsInput
+){
+    db_updateOneTask(where: {id: $id}, data: {title: $title, content: $content, status: $status}){
+        id
+        title
+        content
+        status
+    }
+}

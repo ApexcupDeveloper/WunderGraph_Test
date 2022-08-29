@@ -1,0 +1,7 @@
+mutation (
+    $id: Int!
+){
+    db_deleteOneOrder(where: {id: $id}) {
+        id
+    }
+}

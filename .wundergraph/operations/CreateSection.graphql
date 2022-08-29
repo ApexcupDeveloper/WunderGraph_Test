@@ -1,0 +1,13 @@
+mutation (
+	$title: String!
+  $updatedAt: DateTime! @injectCurrentDateTime
+) {
+	db_createOneSection(
+		data: {
+			title: $title
+      updatedAt: $updatedAt
+		}
+	) {
+		id
+	}
+}

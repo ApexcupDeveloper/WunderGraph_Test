@@ -1,0 +1,51 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.dropzone {
+	flex: 1;
+	width: 100%;
+  height: 100%;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: rgb(34 34 34 / 45%) !important;
+}
+
+/* .grid-item {
+	height: auto !important;
+} */
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #3f3e3e;
+	border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

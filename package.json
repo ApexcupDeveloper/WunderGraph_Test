@@ -1,0 +1,42 @@
+{
+  "name": "nextjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run nextDev\" \"npm run wundergraph\" \"npm run browser\"",
+    "wundergraph": "cd .wundergraph && wunderctl up --debug",
+    "browser": "wait-on \"http-get://localhost:3000\" && wait-on \"http-get://localhost:9991\" && open-cli http://localhost:3000",
+    "build": "next build",
+    "nextDev": "next dev",
+    "nextStart": "next start",
+    "migrate": "prisma format && prisma migrate dev --name",
+    "generate": "cd .wundergraph && wunderctl generate --debug",
+    "clear": "cd .wundergraph && wunderctl up --clear-introspection-cache",
+    "wunderctl": "wunderctl"
+  },
+  "dependencies": {
+    "@wundergraph/nextjs": "^0.0.35",
+    "@wundergraph/sdk": "^0.96.1",
+    "graphql": "^16.3.0",
+    "gray-matter": "^4.0.3",
+    "next": "^12.1.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-gesture-responder": "^2.1.0",
+    "react-grid-dnd": "^2.1.2",
+    "react-icons": "^4.4.0",
+    "react-markdown": "^8.0.3",
+    "react-modal": "^3.15.1",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.27",
+    "@types/react": "^18.0.7",
+    "@types/react-syntax-highlighter": "^15.5.4",
+    "concurrently": "^6.0.0",
+    "open-cli": "^7.0.1",
+    "prisma": "^4.2.1",
+    "typescript": "^4.7.2",
+    "wait-on": "^6.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+mutation (
+	$title: String!
+	$content: String!
+	$status: Int!
+  $updatedAt: DateTime! @injectCurrentDateTime
+) {
+	db_createOneTask(
+		data: {
+			title: $title
+			content: $content
+			status: $status
+      updatedAt: $updatedAt
+		}
+	) {
+		id
+	}
+}

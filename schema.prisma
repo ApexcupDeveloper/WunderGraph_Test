@@ -1,0 +1,27 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://admin:admin@localhost:5432/wundergraph?schema=public"
+}
+
+model Section {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String   @db.VarChar(255)
+}
+
+model Task {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String   @db.VarChar(255)
+  content   String
+  status    Int
+}
+
+model Order {
+  id        Int      @id
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     String
+}

@@ -1,0 +1,7 @@
+mutation (
+    $id: Int!
+){
+    db_deleteOneSection(where: {id: $id}) {
+        id
+    }
+}

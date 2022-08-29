@@ -1,0 +1,6 @@
+query($id: db_IntFilter!) {
+    db_findManyOrder(where: { id: $id }) {
+      id,
+      order
+    }
+}
