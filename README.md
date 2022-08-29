@@ -7,20 +7,25 @@ This demo is developed in WunderGraph with Next.js & Postgres.
 2. Please replace the DB url with yours in `.wundergraph/wundergraph.config.ts`
 
 ## Getting Started
+1. Clone the project
 
-1. Install the dependencies with below command:
+```
+git clone git@github.com:ApexcupDeveloper/WunderGraph_Test.git
+```
+
+2. Install the dependencies with below command:
 
 ```
 npm install
 ```
 
-2. Migrate your database.
+3. Migrate your database.
 
 ```
 npm run migrate init
 ```
 
-3. Run the project
+4. Run the project
 
 ```
 npm start
